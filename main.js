@@ -362,7 +362,7 @@ class Boink {
     }
 
     async main() {
-        const dataFile = path.join(__dirname, './../boinkers/data/boinkers.txt');
+        const dataFile = path.join(__dirname, './../Boinkers-Bot/data/boinkers.txt');
         const data = fs.readFileSync(dataFile, 'utf8')
             .replace(/\r/g, '')
             .split('\n')
