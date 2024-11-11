@@ -29,7 +29,7 @@ class Boink {
 
     loadProxies() {
         try {
-            return fs.readFileSync('./../boinkers/data/proxy.txt', 'utf8').split('\n').filter(Boolean);
+            return fs.readFileSync('./../Boinkers-Bot/data/proxy.txt', 'utf8').split('\n').filter(Boolean);
         } catch (error) {
             this.log('Ora bisa maca file proxy.txt', 'error');
             return [];
@@ -418,7 +418,7 @@ class Boink {
     }
 
     async main() {
-        const dataFile = path.join(__dirname, './../boinkers/data/boinkers.txt');
+        const dataFile = path.join(__dirname, './../Boinkers-Bot/data/boinkers.txt');
         const data = fs.readFileSync(dataFile, 'utf8')
             .replace(/\r/g, '')
             .split('\n')
